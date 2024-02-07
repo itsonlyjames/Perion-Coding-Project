@@ -9,6 +9,7 @@ It routes the fetch request via the server (see `/src/routes/+page.server.ts`) a
 - Loading states (initial load, requesting information, etc)
 - Better error handling (no user found vs error returning data)
 - Prettier front-end (animations, transitions, and more)
+- Type defintions for API endpoints
 
 ## Using create-svelte
 
