@@ -1,20 +1,14 @@
-# create-svelte
+# Perion Coding Project
+
+A simple server side rendered page that requests data from the Steam API before displaying to the user the requested Steam accounts information (specifically games list and info).
+
+It routes the fetch request via the server (see `/src/routes/+page.server.ts`) after the user has submitted the requested Steam ID in the forms input. The Steam ID is passed via Svelte server actions before being used as the argument for obtaining correct data via Steam API.
+
+## Using create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
+### Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
@@ -25,7 +19,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+### Building
 
 To create a production version of your app:
 
