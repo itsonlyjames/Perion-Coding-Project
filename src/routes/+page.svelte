@@ -41,7 +41,7 @@
 
 		{#if form?.response}
 			<h2 class="h2">Results</h2>
-			<div class="grid grid-cols-2 gap-4">
+			<div class="grid gap-4 md:grid-cols-2">
 				{#if mostPlayedGame}
 					<div class="card variant-glass-primary p-6">
 						<h3 class="h3 mb-2">Most Played Game</h3>
@@ -61,14 +61,14 @@
 				{/if}
 			</div>
 
-			<div class="grid grid-cols-3 gap-8">
+			<div class="grid gap-8 md:grid-cols-3">
 				{#each form.response.games as game}
 					<div class="card variant-filled-secondary flex flex-col">
 						<header class="card-header p-0 rounded-lg">
 							<img
 								src={`https://steamcdn-a.akamaihd.net/steam/apps/${game.appid}/header.jpg`}
 								alt=""
-								class="rounded-t-2xl"
+								class="rounded-t-2xl w-full"
 							/>
 						</header>
 						<section class="p-4 flex flex-col justify-between h-full">
