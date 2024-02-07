@@ -9,15 +9,4 @@ export const retrieveOwnedGames = async (steamId: string) =>
 			if (res.status === 400) throw new Error('No user found');
 			return res.json();
 		})
-		.catch((e) => {
-			response: e;
-		});
-
-export const retrieveUserInfo = async (steamId: string) => {
-	const data = await fetch(
-		`https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${PUBLIC_API_KEY}&steamids=${steamId}`
-	)
-		.then((res) => res.json())
-		.catch((e) => new Error(e));
-	return data;
-};
+		.catch((e) => e);
